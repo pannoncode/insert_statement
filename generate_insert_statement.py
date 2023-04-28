@@ -19,7 +19,7 @@ def generate_insert_statement(self, data: pd.Series, insert_data: pd.DataFrame):
         De ha jól értelmezem, akkor itt a file_handler-ben csak fájl műveleteknek kéne lennie,
         ezért szerintem egy másik megoldás az lehetne, ahogy az összefűzött sql kódot egy 
         listába raknám és ezt a listát adná vissza a függvény
-        """
+    """
     inserted_values = insert_data.values
     value_statement = "values ("
     to_db = ""
